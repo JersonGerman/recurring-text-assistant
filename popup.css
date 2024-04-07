@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 1.5rem;
+    background-color: #111;
+}
+
+#container {
+    width: 400px;
+}
+#container .title{
+    color: #aaa;
+}
+#textEntries > .entryContainer {
+    position: relative;
+    background-color: #333;
+    color: #ddd;
+    border-radius: 1rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.8rem;
+
+}
+#textEntries > .entryContainer > div {
+    width: 100%;
+
+}
+#textEntries > .entryContainer > div > p{
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    margin: 0;
+    cursor: copy;
+    
+}
+#textEntries > .entryContainer > div > p:hover,
+button[type="button"]:hover,
+.entryContainer > span:hover
+{
+    opacity: 0.8;
+}
+.entryContainer > span{
+    position: absolute;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    right: -1.6rem;
+    top: 0;
+    bottom: 0;
+    width: 24px;    
+    height: 24px;
+    cursor: pointer;
+}
+.entryContainer > span > .span-size{
+    position: absolute;
+    width: 24px;    
+    height: 24px;
+}
+hr{
+    border-color: #000;
+}
+
+/* input text */
+.container-input{
+    margin: 0 auto;
+}
+.container-input > textarea{
+    background-color: #222;
+    border: none;
+    border-radius: 1rem;
+    color: #ddd;
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
+    outline: none;
+    overflow-y: auto;
+    padding: 0.4rem 0.9rem;
+    resize: none;
+    scrollbar-width: none;
+    transition-property: padding, font-size;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Button */
+.container-input textarea:focus{
+    padding: 0.48rem 0.98rem;
+    font-size: 0.95rem;
+}
+
+.no-visible{
+    display: none;
+}
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+#cancelButton{
+    background-color: #b52020;
+}

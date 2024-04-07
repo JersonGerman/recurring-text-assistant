@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recurring text</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h2 class="title">Recurring text assistant</h2>
+      <div id="textEntries"></div>
+      <hr />
+      <div class="container-input">
+        <textarea
+          id="text-input"
+          placeholder="Introduce tu texto aquí"
+        ></textarea>
+      </div>
+    </div>
+    <div>
+      <button type="button" id="saveButton">Save text</button>
+      <button type="button" class="no-visible" id="updateButton">
+        Update text
+      </button>
+      <button type="button" class="no-visible" id="cancelButton">Cancel</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Recurring text assistant",
+    "version": "1.0",
+    "description": "Con nuestra extensión para Chrome, mejorar tu productividad es sencillo. Olvídate de seleccionar manualmente el texto que deseas copiar. Ahora, con un simple clic, puedes registrar y copiar fácilmente el contenido que necesitas. Simplifica tu flujo de trabajo y ahorra tiempo con nuestra herramienta.",
+  
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+  
+    "permissions": ["clipboardWrite"]
+  }
